@@ -10,7 +10,11 @@ public class TestSpring {
         System.out.println("musicPlayer2 == musicPlayer1 -> " + (musicPlayer2 == musicPlayer1));
         System.out.println(musicPlayer1);
         System.out.println(musicPlayer2);
-
+        System.out.println("musicPlayer1 " + musicPlayer1.getVolume());
+        System.out.println("musicPlayer2 " + musicPlayer2.getVolume());
+        musicPlayer2.setVolume(123);
+        System.out.println("musicPlayer1 " + musicPlayer1.getVolume());
+        System.out.println("musicPlayer2 " + musicPlayer2.getVolume());
         context.close();
     }
 }
