@@ -9,7 +9,9 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
     <bean id="musicBean"
           class="ru.philimonov.springcourse.ClassicalMusic"
-    init-method="doMyInit" destroy-method="doMyDestroy">
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          factory-method="getClassicalMusic">
     </bean>
     <bean id="musicPlayer"
           class="ru.philimonov.springcourse.MusicPlayer" scope="prototype">
