@@ -1,16 +1,14 @@
 package ru.philimonov.springcourse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MusicPlayer{
-    private Music music;
+    private RockMusic music;
 
-    public MusicPlayer() {
-    }
-
-    //IoC
-    public MusicPlayer(Music music) {
+    @Autowired
+    public MusicPlayer(RockMusic music) {
         this.music = music;
     }
 
