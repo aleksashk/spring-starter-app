@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MusicPlayer{
-    private RockMusic music;
+    private Music music;
 
     @Autowired
-    public MusicPlayer(RockMusic music) {
+    public MusicPlayer(Music music) {
         this.music = music;
     }
 
